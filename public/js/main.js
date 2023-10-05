@@ -2,7 +2,6 @@ const loginBtn = document.getElementById('loginBtn')
 const login = document.getElementById('loginOptions')
 const globalSitesBtn = document.getElementById('sitesBtn')
 const globalSites = document.getElementById('sitesDropdown')
-const dropdownBtn = document.querySelector('.dropdownBtn')
 
  loginBtn.addEventListener('click', () => {
      if (login.classList.contains('hidden')){
