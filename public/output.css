@@ -494,8 +494,18 @@ video {
 .top-12 {
   top: 3rem;
 }
+.z-40 {
+  z-index: 40;
+}
+.z-50 {
+  z-index: 50;
+}
 .m-0 {
   margin: 0px;
+}
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 .mx-4 {
   margin-left: 1rem;
@@ -509,6 +519,9 @@ video {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -518,8 +531,11 @@ video {
 .mr-2 {
   margin-right: 0.5rem;
 }
-.mb-2 {
-  margin-bottom: 0.5rem;
+.mr-4 {
+  margin-right: 1rem;
+}
+.mr-6 {
+  margin-right: 1.5rem;
 }
 .block {
   display: block;
@@ -532,9 +548,6 @@ video {
 }
 .hidden {
   display: none;
-}
-.h-14 {
-  height: 3.5rem;
 }
 .h-20 {
   height: 5rem;
@@ -557,8 +570,8 @@ video {
 .w-6 {
   width: 1.5rem;
 }
-.w-\[4\.5rem\] {
-  width: 4.5rem;
+.w-8 {
+  width: 2rem;
 }
 .w-auto {
   width: auto;
@@ -578,6 +591,9 @@ video {
 .flex-row {
   flex-direction: row;
 }
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .items-center {
   align-items: center;
 }
@@ -595,6 +611,10 @@ video {
 }
 .border-none {
   border-style: none;
+}
+.bg-cyan-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 145 178 / var(--tw-bg-opacity));
 }
 .bg-cyan-800 {
   --tw-bg-opacity: 1;
@@ -615,11 +635,11 @@ video {
 .fill-iconBlue {
   fill: #0161AA;
 }
-.p-4 {
-  padding: 1rem;
-}
 .p-0 {
   padding: 0px;
+}
+.p-4 {
+  padding: 1rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -637,17 +657,14 @@ video {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
-.pr-5 {
-  padding-right: 1.25rem;
+.pr-4 {
+  padding-right: 1rem;
 }
 .pt-4 {
   padding-top: 1rem;
 }
 .pt-5 {
   padding-top: 1.25rem;
-}
-.pt-7 {
-  padding-top: 1.75rem;
 }
 .text-left {
   text-align: left;
@@ -669,67 +686,90 @@ video {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
-.text-white {
+.text-gray-800 {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 .text-inherit {
   color: inherit;
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .shadow-xl {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+
+@layer {
+    .show {
+    display: block;
+  }
+}
+
 .after\:pointer-events-none::after {
   content: var(--tw-content);
   pointer-events: none;
 }
+
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;
 }
+
 .after\:bottom-full::after {
   content: var(--tw-content);
   bottom: 100%;
 }
+
 .after\:left-2\/4::after {
   content: var(--tw-content);
   left: 50%;
 }
+
 .after\:-ml-2::after {
   content: var(--tw-content);
   margin-left: -0.5rem;
 }
+
 .after\:-ml-2\.5::after {
   content: var(--tw-content);
   margin-left: -0.625rem;
 }
+
 .after\:h-0::after {
   content: var(--tw-content);
   height: 0px;
 }
+
 .after\:w-0::after {
   content: var(--tw-content);
   width: 0px;
 }
+
 .after\:border-8::after {
   content: var(--tw-content);
   border-width: 8px;
 }
+
 .after\:border-solid::after {
   content: var(--tw-content);
   border-style: solid;
 }
+
 .after\:border-transparent::after {
   content: var(--tw-content);
   border-color: transparent;
 }
+
 .after\:border-b-white::after {
   content: var(--tw-content);
   --tw-border-opacity: 1;
   border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
+
 @media (prefers-color-scheme: dark) {
 
   .dark\:text-white {
@@ -737,7 +777,12 @@ video {
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }
+
 @media (min-width: 1024px) {
+
+  .lg\:mr-14 {
+    margin-right: 3.5rem;
+  }
 
   .lg\:mr-24 {
     margin-right: 6rem;
@@ -753,5 +798,18 @@ video {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .lg\:pr-5 {
+    padding-right: 1.25rem;
+  }
+
+  .lg\:pt-7 {
+    padding-top: 1.75rem;
   }
 }
